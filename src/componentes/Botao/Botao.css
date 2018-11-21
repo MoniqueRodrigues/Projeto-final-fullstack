@@ -2,9 +2,10 @@
   border: 1px solid #d39e00;
   border-radius: 4px;
   background: #d39e00;
-  font-size: 10px;
+  font-family: 'Patua One', 'cursive';
+  font-size: 15px;
   font-weight: bold;
-  color: azure;
+  color: #252525;
   position: absolute;
   top: 60%;
   left: 50%;

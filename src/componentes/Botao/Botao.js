@@ -1,5 +1,5 @@
-import React from 'react';
-import './Botao.css';
+import React from 'react'
+import './Botao.css'
 
 
 class Botao extends React.Component {
