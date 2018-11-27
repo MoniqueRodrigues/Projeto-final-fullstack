@@ -1,1 +1,57 @@
-/* No CSS *//*# sourceMappingURL=Menu.css.map */
+body {
+  background-color: white;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .barra {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+
+#icone {
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+.barra {
+  background-color: #333;
+  height: 50%;
+  width: 140px;
+  position: absolute;
+  -webkit-transition: all 0,8 linear;
+  transition: all 0,8 linear;
+  left: -300px;
+}
+
+.barra nav {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+}
+
+.barra nav a {
+  text-decoration: none;
+}
+
+.barra nav a .link {
+  background-color: #494950;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  color: #f7f4f4e8;
+  border-bottom: 1px solid #222;
+}
+
+.barra nav a .link:hover {
+  background-color: #FFE359;
+  color: #222;
+  font-weight: 100;
+}
+/*# sourceMappingURL=Menu.css.map */

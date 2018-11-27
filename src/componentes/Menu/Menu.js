@@ -1,23 +1,34 @@
 import React from 'react'
-
-import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu'
+import icone from './hamburguer.png'
 import './Menu.css'
 
 
-class Simple extends React.Component {
+
+class Menu extends React.Component {
   render() {
     return (
-      <DropdownMenu>
-        <MenuItem text='Home' location='/simple' />
-        <MenuItem text='Edit Profile' location='/simple' />
-        <MenuItem text='Logout' location='/simple' />
-      </DropdownMenu>
+      <div>
+        <input type="checkbox" id="check" />
+        <label id="icone" for="check"><img src={icone}alt=""/></label>
+        <div class="barra">
+            <nav>
+                <a href=""><div className="link">Home</div></a>
+                <a href=""><div className="link">Você Sabia?</div></a>
+                <a href=""><div className="link">Quizz</div></a>
+                <a href=""><div className="link">Busca Escola</div></a>
+            </nav>
+        </div>
+              
+      </div>
+      
+        
+      
     )
   }
 }
 
 
-export default Simple;
+export default Menu;
 
 
 
