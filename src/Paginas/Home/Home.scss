@@ -10,29 +10,34 @@
 
     
         .h1-titulo{
-            font-family: inherit;
-            font-size: 5rem;
-            font-weight: 700;
-            position: relative;
-            top:130px;
+            display:block;
             text-align: center;
+            padding-top: 120px;                        
+            font-size: 5rem;
+            font-weight: 700;                  
             color:#E8C206;
-            //font-family: 'Allerta Stencil', sans-serif;
-            //font-family: 'Patua One', 'cursive';
+            // //font-family: 'Allerta Stencil', sans-serif;
+            // //font-family: 'Patua One', 'cursive';
             font-family: 'Source Sans Pro', sans-serif;
-            letter-spacing: 2px;
+            // // letter-spacing: 2px;
     
         }
     
     
          .h2-subtitulo{
+            display:block;
+            //padding-bottom: 60px;
             color:#FFE359;
             text-align: center;
-            position: relative;
-            top: 140px;
+            // position: relative;
+            // top: 170px;
             font-style: italic;
             font-family: 'Patua One', 'cursive';
-            font-size: 1.75rem
+            font-size: 1.75rem;
+            margin-top: 25px;
+            
+            
+
          }
     
 

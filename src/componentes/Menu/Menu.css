@@ -19,12 +19,11 @@ body {
 }
 
 .barra {
-  background-color: #333;
   height: 50%;
   width: 140px;
   position: absolute;
-  -webkit-transition: all 0,8 linear;
-  transition: all 0,8 linear;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
   left: -300px;
 }
 
@@ -41,11 +40,11 @@ body {
 .barra nav a .link {
   background-color: #494950;
   padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 12pt;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
-  color: #f7f4f4e8;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  color: #FFE359;
   border-bottom: 1px solid #222;
 }
 

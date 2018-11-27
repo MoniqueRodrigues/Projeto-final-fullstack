@@ -6,24 +6,22 @@
 }
 
 .home .h1-titulo {
-  font-family: inherit;
+  display: block;
+  text-align: center;
+  padding-top: 120px;
   font-size: 5rem;
   font-weight: 700;
-  position: relative;
-  top: 130px;
-  text-align: center;
   color: #E8C206;
   font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: 2px;
 }
 
 .home .h2-subtitulo {
+  display: block;
   color: #FFE359;
   text-align: center;
-  position: relative;
-  top: 140px;
   font-style: italic;
   font-family: 'Patua One', 'cursive';
   font-size: 1.75rem;
+  margin-top: 25px;
 }
 /*# sourceMappingURL=Home.css.map */

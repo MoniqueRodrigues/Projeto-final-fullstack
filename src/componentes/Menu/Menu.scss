@@ -16,14 +16,14 @@ body{
     cursor: pointer;
     padding: 15px;
     position: absolute; 
-    z-index: 1;
+    z-index:1;
 }
 .barra{
-    background-color: #333;
+    //background-color: #333;
     height: 50%;
     width: 140px;
     position: absolute;
-    transition: all 0,8 linear;//duração de 2seg curva linear
+    transition: all 1s linear;//duração de 2seg curva linear
     left: -300px;
     nav{
         width: 100%;
@@ -34,10 +34,10 @@ body{
             .link{
                 background-color: #494950;
                 padding: 20px;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
                 font-size: 12pt;
-                transition: all 1s linear;
-                color:#f7f4f4e8;
+                transition: all .2s linear;
+                color:#FFE359;
                 border-bottom: 1px solid #222;
 
             }

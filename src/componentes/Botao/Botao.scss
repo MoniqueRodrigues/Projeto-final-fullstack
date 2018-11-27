@@ -2,21 +2,21 @@
 
     
 .botao-react{
-    
-    
+        
     border: 1px solid #d39e00;
     border-radius: 4px;
-    background: #d39e00;
-    font-family: 'Patua One', 'cursive';
+    //background: #d39e00;
+    background-color: rgb(37, 37, 37);
+    font-family:'Source Sans Pro', sans-serif;
     font-size: 15px;
-    font-weight: bold;
-    color: rgb(37, 37, 37);
+    //font-weight: bold;
+    color: #d39e00;
     //padding: 2px 60px;
     position: absolute;
-    top: 60%;
-    left: 50%;
-    margin-top:-50px;
-    margin-left:-50px;
+    top: 50%; 
+    //left: 200px;
+    margin-top:60px;
+    margin-left:600px;
     width: 150px;
     height: 50px;
 }

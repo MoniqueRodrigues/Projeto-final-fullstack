@@ -1,16 +1,14 @@
 .botao-react {
   border: 1px solid #d39e00;
   border-radius: 4px;
-  background: #d39e00;
-  font-family: 'Patua One', 'cursive';
+  background-color: #252525;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
-  font-weight: bold;
-  color: #252525;
+  color: #d39e00;
   position: absolute;
-  top: 60%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
+  top: 50%;
+  margin-top: 60px;
+  margin-left: 600px;
   width: 150px;
   height: 50px;
 }
