@@ -1,18 +1,12 @@
 import React from 'react'
-import './Botao.css'
-//import Home from './../../Paginas/Home/Home';
+import './Botao.scss'
 
-
-class Botao extends React.Component {
-    render() {
-        return(
-            <button className="botao-react">
-                {this.props.nome}
-            </button>
-        )
-
-        
-    }
+function Botao(props) {
+  return (
+    <button className="botao">
+      {props.children}
+    </button>
+  )
 }
 
 export default Botao
