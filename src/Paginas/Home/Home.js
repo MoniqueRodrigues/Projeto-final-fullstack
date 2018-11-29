@@ -1,25 +1,17 @@
 import React from 'react'
-import './Home.css'
-import Menu from '../../componentes/Menu/Menu.js';
-import Botao from './../../componentes/Botao/Botao';
+import Menu from '../../componentes/Menu/Menu.js'
+import Botao from './../../componentes/Botao/Botao'
+import './Home.scss'
 
-class Home extends React.Component{
-  render(){
-    return(
-          <div className="home">
-          
-              <Menu></Menu>
-             
-           
-              <h1 className="h1-titulo">{this.props.titulo}</h1>
-              <h2 className="h2-subtitulo">{this.props.subtitulo}</h2>
-              <Botao nome= "Saiba Mais"></Botao>
+function Home() {
+  return (
+    <div className="home">
+      <Menu />
+      <h1 className="home__titulo">ABCreches</h1>
+      <h2 className="home__subtitulo">A melhor escolha para quem merece o melhor</h2>
+      <Botao>Saiba Mais</Botao>
+    </div>
+  )
+}
 
-                                
-          </div>
-
-    )
-  }
-}  
-  
 export default Home

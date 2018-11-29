@@ -7,11 +7,12 @@ body{
 }
 
 
-menu{
+menu {
     list-style: none;
     margin: 20px 0 0 350px;
     border: 1px solid blue;
     float: left;
+    
     .li-home{
         position: relative;
         float: left;
@@ -21,7 +22,6 @@ menu{
         background-color: green($color: #000000);
         height: 28px;
         line-height: 28px;
-
     }
 }
 

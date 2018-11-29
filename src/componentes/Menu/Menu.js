@@ -1,67 +1,27 @@
 import React from 'react'
 import icone from './hamburguer.png'
-import './Menu.css'
+import './Menu.scss'
 
-
-
-class Menu extends React.Component {
-  render() {
-    return (
-      <div>
-        <input type="checkbox" id="check" />
-        <label id="icone" for="check"><img src={icone}alt=""/></label>
-        <div class="barra">
-            <nav>
-                <a href=""><div className="link">Home</div></a>
-                <a href=""><div className="link">Você Sabia?</div></a>
-                <a href=""><div className="link">Quizz</div></a>
-                <a href=""><div className="link">Busca Escola</div></a>
-            </nav>
-        </div>
-              
+function Menu() {
+  return (
+    <div>
+      <input type="checkbox" id="check" />
+      <label id="icone" for="check"><img src={icone} alt="" /></label>
+      <div class="barra">
+        <nav>
+          <a className="link" href="/">Home</a>
+          <a className="link" href="/">Você Sabia?</a>
+          <a className="link" href="/">Quizz</a>
+          <a className="link" href="/">Busca Escola</a>
+        </nav>
       </div>
-      
-        
-      
-    )
-  }
+    </div>
+  )
 }
-
 
 export default Menu;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // class Menu extends React.Component {
-
 //     render() {
 //         return (   
 //              <div className="menu-botao btn-group dropleft"> 
@@ -74,7 +34,6 @@ export default Menu;
 //                      <a className="dropdown-item"  href="#">Busque a creche</a>
 //                  </div>
 //              </div>
-            
 //         )
 //     }
 // }

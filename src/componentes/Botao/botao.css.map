@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAGA,AAAA,YAAY,CAAA;EAER,MAAM,EAAE,iBAAiB;EACzB,aAAa,EAAE,GAAG;EAElB,gBAAgB,EAAE,OAAe;EACjC,WAAW,EAAC,6BAA6B;EACzC,SAAS,EAAE,IAAI;EAEf,KAAK,EAAE,OAAO;EAEd,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EAER,UAAU,EAAC,IAAI;EACf,WAAW,EAAC,KAAK;EACjB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;CACf",
-    "sources": [
-        "Botao.scss"
-    ],
-    "names": [],
-    "file": "Botao.css"
-}
