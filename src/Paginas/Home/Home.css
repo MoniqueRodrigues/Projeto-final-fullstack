@@ -1,0 +1,41 @@
+.home .home__imagem {
+  width: 100%;
+  height: 100%;
+  background-image: url("../Home/pencil1.png");
+  background-size: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.home .home__imagem:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eeee9d20), color-stop(60%), to(transparent));
+  background: linear-gradient(180deg, #eeee9d20 0, 60%, transparent 100%);
+}
+
+.home .home__titulo {
+  display: block;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: white;
+  font-family: "Quattrocento Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+.home .home__subtitulo {
+  display: block;
+  color: #fff700;
+  text-align: center;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 20px;
+  margin-top: 25px;
+}
+/*# sourceMappingURL=Home.css.map */

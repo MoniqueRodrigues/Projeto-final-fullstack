@@ -1,33 +1,47 @@
 .home{
-  // width: 100%;
+  .home__imagem{
+    width: 100%;
+    height: 100%;
+    background-image: url("../Home/pencil1.png");
+    background-size: 100%;
+    z-index:-1;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+.home__imagem:after{
+  position: absolute;
+  content: "";
   height: 100%;
-  background-image: url("./pencil.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  width: 100%;
+  top:0;
+  left:0;
+  background: linear-gradient(180deg, #eeee9d20 0,60%, transparent 100%);
+
+}
+      
 
   .home__titulo{
     display:block;
     text-align: center;
     padding-top: 120px;                        
-    font-size: 5rem;
-    font-weight: 700;                  
-    color:#E8C206;
-    // font-family: 'Allerta Stencil', sans-serif;
-    // font-family: 'Patua One', 'cursive';
-    font-family: 'Source Sans Pro', sans-serif;
-    // letter-spacing: 2px;
+    font-size: 80px;
+    font-weight:bolder;                
+    //color:#E8C206;
+    //color:#068f90;
+    //color: #29b6d6;
+    color: white;
+    font-family: "Quattrocento Sans", sans-serif;
+    letter-spacing: 1px;
+   
   }
 
   .home__subtitulo{
     display:block;
-    // padding-bottom: 60px;
-    color:#FFE359;
+    color:#fff700;
     text-align: center;
-    // position: relative;
-    // top: 170px;
-    font-style: italic;
-    font-family: 'Patua One', 'cursive';
-    font-size: 1.75rem;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size:20px;
     margin-top: 25px;
   }
 }

@@ -1,6 +1,4 @@
-body{
-  background-color:white;
-}
+
 
 #check{
   display: none;
@@ -18,11 +16,11 @@ body{
 }
 
 .barra{
-  // background-color: #333;
+ 
   height: 50%;
   width: 140px;
   position: absolute;
-  transition: all 1s linear; // duração de 2seg curva linear
+  transition: all 1s linear; 
   left: -300px;
   
   nav{
@@ -34,19 +32,23 @@ body{
       text-decoration: none;
 
       .link{
-        background-color: #494950;
+        //background-color: #33322e;
+        background-color:transparent;
         padding: 20px;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 12pt;
         transition: all .2s linear;
-        color:#FFE359;
-        border-bottom: 1px solid #222;
+        color: white;
+        border: 1px solid white;
+        
+       
       }
 
       .link:hover{
-        background-color: #FFE359;
-        color: #222;
+        //background-color:#12adcb;
+        color:white;
         font-weight: 100;
+        background-color:#29b6d6;
       }
     }
   }

@@ -1,0 +1,52 @@
+#check {
+  display: none;
+}
+
+#check:checked ~ .barra {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+
+#icone {
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+.barra {
+  height: 50%;
+  width: 140px;
+  position: absolute;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  left: -300px;
+}
+
+.barra nav {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+}
+
+.barra nav a {
+  text-decoration: none;
+}
+
+.barra nav a .link {
+  background-color: transparent;
+  padding: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12pt;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  color: white;
+  border: 1px solid white;
+}
+
+.barra nav a .link:hover {
+  color: white;
+  font-weight: 100;
+  background-color: #29b6d6;
+}
+/*# sourceMappingURL=Menu.css.map */

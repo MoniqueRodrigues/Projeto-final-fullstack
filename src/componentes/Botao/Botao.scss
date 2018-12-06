@@ -1,19 +1,24 @@
 .botao {
-  border: 1px solid #d39e00;
-  border-radius: 4px;
-  // background: #d39e00;
-  // background-color: rgb(37, 37, 37);
-  background-color: rgb(37, 37, 37);
+  border: 1px solid white;
+   background-color: transparent;
+ 
   font-family:'Source Sans Pro', sans-serif;
   font-size: 15px;
   // font-weight: bold;
-  color: #d39e00;
+  color: white;
   // padding: 2px 60px;
   position: absolute;
   top: 50%; 
   // left: 200px;
-  margin-top:60px;
+  margin-top:40px;
   margin-left:600px;
   width: 150px;
   height: 50px;
+}
+.botao:hover{
+  background-color:#29b6d6;
+}
+.botao:active{
+  
+
 }
