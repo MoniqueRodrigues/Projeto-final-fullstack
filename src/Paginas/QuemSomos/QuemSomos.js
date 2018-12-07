@@ -10,7 +10,10 @@ function QuemSomos(){
         <div className="cabecalho">
             <h3>Quem <span>Somos</span></h3>
             <div className= 'border'></div>
+                 
         </div>
+        {Card(null)}
+
        
     </div>
     

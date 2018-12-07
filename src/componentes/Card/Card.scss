@@ -13,7 +13,7 @@
     justify-content: center;
     .card-wrap{
         //background: orange;
-        margin: 10px;
+        margin: 15px;
         -webkit-perspective:800;
         perspective: 800;
 
@@ -72,13 +72,41 @@
     }
 
     .card1__imagem{
-        background-image: url(./img8.jpg);
+        background-image: url(./img5.jpg);
         background-size: cover;
-        border: #29b6d6 solid 1px;
-      
-        
+        //border: #29b6d6 solid 1px;
+              
         
     }
+
+    
+    .card2__imagem{
+        background-image: url(./img11.png);
+        background-size: cover;
+        //border: #29b6d6 solid 1px;
+
+        
+    }
+
+    
+    .card3__imagem{
+        background-image: url(./img15.jpg);
+        background-size: cover;
+        //border: #29b6d6 solid 1px;
+              
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
 
 

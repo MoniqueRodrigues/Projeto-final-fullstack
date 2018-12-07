@@ -10,7 +10,7 @@
 }
 
 .cards .card-wrap {
-  margin: 10px;
+  margin: 15px;
   -webkit-perspective: 800;
   perspective: 800;
 }
@@ -65,8 +65,17 @@
 }
 
 .cards .card1__imagem {
-  background-image: url(./img8.jpg);
+  background-image: url(./img5.jpg);
   background-size: cover;
-  border: #29b6d6 solid 1px;
+}
+
+.cards .card2__imagem {
+  background-image: url(./img11.png);
+  background-size: cover;
+}
+
+.cards .card3__imagem {
+  background-image: url(./img15.jpg);
+  background-size: cover;
 }
 /*# sourceMappingURL=Card.css.map */
