@@ -1,0 +1,76 @@
+
+.container{
+    margin-top: 200px;
+    //background-color: aliceblue;
+    
+    
+    .titulo{
+        border: solid 1px transparent;
+        background-color:#29b6d6;
+        font-size: 20px;    
+        color: white;  
+        margin-left: 100px;
+        margin-right: 100px;
+        margin: 50px;
+        font-family:'Source Sans Pro', sans-serif;
+        
+        h3{
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            
+
+        }
+
+
+    }
+    form{
+        
+    
+       .tabela{
+         display:flex;
+        justify-content: center;
+           
+           
+           .col{
+               .label{
+                   padding:20px;
+                   font-family:'Source Sans Pro', sans-serif;
+                   display: flex;
+                   justify-content: center;
+                   color: rgb(101, 105, 87);
+
+                   
+
+               }
+               
+               .form-control{
+                   margin: 15px;
+                   padding: 10px;
+                   
+
+
+               }
+           }
+       }
+
+       
+
+    }
+    .button{
+        margin-top: 500px;
+        
+        
+        }
+    }
+          
+       
+
+
+
+
+
+
+
+
+

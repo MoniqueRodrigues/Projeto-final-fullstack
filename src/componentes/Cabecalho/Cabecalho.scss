@@ -1,0 +1,41 @@
+
+    .cabecalho{
+        margin-top: 30px;
+
+        h3 {
+            margin: 10px;
+            text-align: center; 
+            color: white;   
+            font-family:'Source Sans Pro', sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+                    
+            span{
+                color: #29b6d6;
+            }  
+                        
+        }
+        .border{
+            border-top: 1px solid rgba(236, 239, 241, 0.07);
+            border-top-width: 0,5px;
+            border-top-style: solid;
+            height: 1px;
+            margin: 15px auto 0;
+            position: relative;
+            width: 20%;
+    
+        }
+        .border:before{
+            content: '';
+            height: 6px;
+            left: 50%;
+            margin-left: -20px;
+            position: absolute;
+            top: -4px;
+            width: 50px;
+            background-color:#29b6d6;
+        }
+        
+
+    }
+   

@@ -6,10 +6,13 @@
     background-size: 100%;
     z-index:-1;
     background-repeat: no-repeat;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 }
-.home__imagem:after{
+.home__imagem::after{
   position: absolute;
   content: "";
   height: 100%;
