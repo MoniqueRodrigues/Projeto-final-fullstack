@@ -1,0 +1,39 @@
+.login{
+    background-color:#8b8b8c;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    h1{
+        font-family: "Quattrocento Sans", sans-serif;
+
+    }
+    p{
+        font-family: "Quattrocento Sans", sans-serif;
+        color:#fff700;
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+    .Botao{
+        position: absolute;
+        top: 380px;
+        right:600px;
+        
+
+    }
+    link{
+        color:#fff700;
+              
+    }
+    Link{
+        margin-top: 100px;
+
+    }
+
+    
+
+}

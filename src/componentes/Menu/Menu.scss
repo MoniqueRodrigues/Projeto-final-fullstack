@@ -1,6 +1,15 @@
 
+*{
+margin: 0;
+padding: 0;
+
+}
+
+
+
+
 .menu{
-  //position: fixed;
+  position: fixed;
 
 
 #check{
@@ -18,13 +27,15 @@
   z-index:1;
 }
 
+
 .barra{
  
   height: 50%;
   width: 140px;
   position: absolute;
   transition: all 1s linear; 
-  left: -300px;
+  left: -330px;
+  
   
   nav{
     width: 100%;
@@ -35,14 +46,16 @@
       text-decoration: none;
 
       .link{
-        //background-color: #33322e;
+        
         background-color:transparent;
         padding: 20px;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 12pt;
         transition: all .2s linear;
         color: white;
-        //border: 1px solid white;
+        font-weight: bold;
+       
+        
         
        
       }

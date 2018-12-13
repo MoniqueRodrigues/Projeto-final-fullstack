@@ -3,21 +3,33 @@ import icone from './hamburguer.png'
 import './Menu.scss'
 
 
+
 function Menu(){
+  return(
+    
+
+  <div className= "menu">
+    <input type="checkbox" id="check"/>
+    <label id="icone" for= "check"><img src ={icone} alt =""/></label>
+    <div className="barra">
+    <nav>
+      <a href="#home"><div className="link">Home</div></a>
+        <a href="#oQueOferecemos"><div className="link">O que oferecemos</div></a>
+      <a href="/login"><div className="link">Login</div></a>
+        <a href="#tabela"><div className="link">Busca Creche</div></a>
+    </nav>
+  </div>
+</div>
+
+
+
+  )
+}
   
-    return(
-      <div className= "menu">
-        <input type="checkbox" id="check"/>
-        <label id="icone" for= "check"><img src ={icone} alt =""/></label>
-        <div className="barra">
-          <nav>
-            <a href=""><div className="link">Home</div></a>
-            <a href=""><div className="link">Você Sabia?</div></a>
-            <a href=""><div className="link">Quizz</div></a>
-            <a href=""><div className="link">Busca Escola</div></a>
-          </nav>
-        </div>
-      </div>
-    )
-  }
-export default Menu;
+  export default Menu; 
+
+
+
+
+
+

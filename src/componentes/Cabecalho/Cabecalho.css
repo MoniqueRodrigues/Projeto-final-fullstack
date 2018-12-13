@@ -1,0 +1,38 @@
+.cabecalho {
+  margin-top: 30px;
+}
+
+.cabecalho h3 {
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.cabecalho h3 span {
+  color: #29b6d6;
+}
+
+.cabecalho .border {
+  border-top: 1px solid white;
+  border-top-width: 0,5px;
+  border-top-style: solid;
+  height: 1px;
+  margin: 15px auto 0;
+  position: relative;
+  width: 200px;
+}
+
+.cabecalho .border:before {
+  content: '';
+  height: 6px;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+  top: -4px;
+  width: 50px;
+  background-color: #29b6d6;
+}
+/*# sourceMappingURL=Cabecalho.css.map */

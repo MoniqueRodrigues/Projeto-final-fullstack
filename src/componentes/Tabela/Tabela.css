@@ -1,0 +1,65 @@
+#tabela {
+  width: 100%;
+  height: 100%;
+  background-color: #8b8b8c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tabela .titulo {
+  border: solid 1px transparent;
+  background-color: #29b6d6;
+  font-size: 20px;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#tabela .titulo h3 {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#tabela form .tabela {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tabela form .tabela .col .label {
+  padding: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+#tabela form .tabela .col .form-control {
+  margin: 15px;
+  padding: 10px;
+}
+
+#tabela .button {
+  position: absolute;
+  top: 1500px;
+  left: 44%;
+}
+/*# sourceMappingURL=Tabela.css.map */

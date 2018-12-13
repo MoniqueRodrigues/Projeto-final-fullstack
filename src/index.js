@@ -4,9 +4,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './Paginas/Home/Home'
-import QuemSomos from './Paginas/QuemSomos/QuemSomos'
+import OQueOferecemos from './Paginas/OQueOferecemos/OQueOferecemos'
 import Tabela from './componentes/Tabela/Tabela'
 import Cabecalho from './componentes/Cabecalho/Cabecalho'
+import Login from './Paginas/Login/Login'
+import Conta from './Paginas/Conta/Conta'
 import './index.scss'
 
 
@@ -14,15 +16,15 @@ import './index.scss'
 function App(){
     return(
 
-        <switch>
-
+        <Switch>
+       
             <Route path = "/home" component = {Home}/>
-            <Route path ="/quemsomos" component ={QuemSomos}/>
+            <Route path ="/oQueOferecemos" component ={OQueOferecemos}/>
             <Route path= "/tabela" component ={Tabela}/>
-            
-          
-
-        </switch>
+            <Route path="/login" component={Login} />
+            <Route path="/conta" component={Conta}/>    
+                 
+        </Switch>
     )
 
 }
@@ -35,5 +37,4 @@ ReactDOM.render(
         <App/>
     </BrowserRouter>,
       document.getElementById('projeto-final')
-
-)   
+)

@@ -12,7 +12,7 @@
 .cards .card-wrap {
   margin: 15px;
   -webkit-perspective: 800;
-  perspective: 800;
+          perspective: 800;
 }
 
 .cards .card-wrap .card {
@@ -24,6 +24,23 @@
           transform-style: preserve-3d;
   -webkit-transition: .7s ease;
   transition: .7s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards .card-wrap .card .botao {
+  top: 60%;
+  right: 71px;
+}
+
+.cards .card-wrap .card .botao a, .cards .card-wrap .card .botao a:visited, .cards .card-wrap .card .botao a:hover {
+  text-decoration: none;
+}
+
+.cards .card-wrap .card .botao:hover {
+  background: white;
+  color: #29b6d6;
 }
 
 .cards .card-wrap .card .adelante, .cards .card-wrap .card .atras {
@@ -39,43 +56,40 @@
 .cards .card-wrap .card .atras {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  padding: 15px;
+}
+
+.cards .card-wrap .card .atras p {
+  font-family: "Quattrocento Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 70px;
   text-align: center;
+  margin-left: 1px;
+  margin-right: 1px;
   color: #fff;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.cards .card-wrap .card .card-wrap:hover .card {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
 }
 
 .cards .card-wrap:hover .card {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  -webkit-box-shadow: 0 0 1em #29b6d6;
+          box-shadow: 0 0 1em #29b6d6;
+  border-radius: 10%;
 }
 
 .cards .card1__imagem {
-  background-image: url(./img5.jpg);
+  background-image: url(./lupa4.jpg);
   background-size: cover;
 }
 
 .cards .card2__imagem {
-  background-image: url(./img11.png);
+  background-image: url(./avaliacao.jpg);
   background-size: cover;
 }
 
 .cards .card3__imagem {
-  background-image: url(./img15.jpg);
+  background-image: url(./escola.jpg);
   background-size: cover;
 }
 /*# sourceMappingURL=Card.css.map */

@@ -1,18 +1,29 @@
 
-.container{
-    margin-top: 200px;
-    //background-color: aliceblue;
+#tabela{
+    width: 100%;
+    height: 100%;
+    background-color:#8b8b8c;
+    //background-size: 100%;
+    //z-index:-1;
+    //background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     
+  
+
     
     .titulo{
+        
         border: solid 1px transparent;
         background-color:#29b6d6;
         font-size: 20px;    
-        color: white;  
+        color: white;
         margin-left: 100px;
         margin-right: 100px;
-        margin: 50px;
         font-family:'Source Sans Pro', sans-serif;
+     
         
         h3{
             text-align: center;
@@ -38,9 +49,11 @@
                    font-family:'Source Sans Pro', sans-serif;
                    display: flex;
                    justify-content: center;
-                   color: rgb(101, 105, 87);
+                   color: white;
+                   font-weight: bold;
 
                    
+                                  
 
                }
                
@@ -58,7 +71,12 @@
 
     }
     .button{
-        margin-top: 500px;
+        //margin-top: 500px;
+        position: absolute;
+        top:1500px;
+        left: 44%;
+
+
         
         
         }

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAA;EAGjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAC,OAAO;EACxB,eAAe,EAAE,IAAI;EACrB,OAAO,EAAC,EAAE;EACV,iBAAiB,EAAE,SAAS;EAC5B,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAKvB",
+    "sources": [
+        "OQueOferecemos.scss"
+    ],
+    "names": [],
+    "file": "OQueOferecemos.css"
+}

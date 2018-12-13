@@ -4,15 +4,16 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   color: white;
-  position: absolute;
-  top: 50%;
-  margin-top: 40px;
-  margin-left: 600px;
+  margin-left: 44%;
   width: 150px;
   height: 50px;
+  position: absolute;
+  top: 50%;
 }
 
 .botao:hover {
+  cursor: pointer;
   background-color: #29b6d6;
+  border: #29b6d6;
 }
 /*# sourceMappingURL=Botao.css.map */
