@@ -4,33 +4,80 @@ import OQueOferecemos from '../../Paginas/OQueOferecemos/OQueOferecemos'
 import './Tabela.scss'
 import Cabecalho from '../Cabecalho/Cabecalho'
 import Botao from '../Botao/Botao'
+import Loading from 'react-loading-bar'
+
+
+const proxy = 'https://cors-anywhere.herokuapp.com/';
 
 export default class Tabela extends React.Component {
 
     constructor(props) {
         super(props)
-        this.state = { 'data': [] }
+        this.state ={bairro: '', escola: '', esfera:'', tipo:'', loading: true, data: [], dataEmpty : false}
+        
+        this.handleChangeEsfera = this.handleChangeEsfera.bind(this)
+        this.handleChangeTipo = this.handleChangeTipo.bind(this)
+        this.handleChangeBairro = this.handleChangeBairro.bind(this)
+        this.handleChangeEscola= this.handleChangeEscola.bind(this)
+    }
+
+    handleChangeEsfera = event => {this.setState({esfera: event.target.value})}
+    handleChangeTipo   = event => {this.setState({tipo: event.target.value})}
+    handleChangeBairro = event => {this.setState({bairro: event.target.value})}
+    handleChangeEscola = event => {this.setState({escola: event.target.value})}
+    
+
+    componentDidMount = data => {
+        this.setState({'loading': true, 'data': []})
+        fetch(proxy + 'https://creches-api.herokuapp.com/api/v1/creches/creche', Headers= ["Origin=null"])
+        .then(res => res.json())
+        .then((result) => {
+            this.setState({'loading' : false, 'data': result.creches})
+        })       
     }
 
 
-    componentDidMount() {
-        fetch('https://creches-api.herokuapp.com/api/v0/creches/page/0')
-            .then(res => res.json)
-            .then(result => {
-                this.state = { 'data': result }
-            })
+    composeURL = (state, stateName, haveParameters) => {
+        if(state !== '' && haveParameters) {
+            return `&${stateName}=${state}`
+        } else if(state !== '' && !haveParameters) {
+            return `?${stateName}=${state}`
+        } else {
+            return ''
+        }
+    }
+
+    loadData = event => {
+        
+        this.setState({loading : true})
+        let urlBase = proxy + 'https://creches-api.herokuapp.com/api/v1/creches/creche'
+        
+    
+        let parameters = [
+            {'state': this.state.esfera, 'stateName': 'esfera'},
+            {'state': this.state.escola, 'stateName': 'nome'},
+            {'state': this.state.tipo,   'stateName': 'tipo'},
+            {'state': this.state.bairro, 'stateName': 'bairro'}
+        ].forEach(parameter => {
+            urlBase += this.composeURL(parameter.state, parameter.stateName, urlBase.includes('?'))
+        })
+
+        fetch(urlBase, Headers= ["Origin=null"])
+        .then(res => res.json())
+        .then(result => {
+            this.setState(
+                {'loading' : false, 'data': result.creches, 'dataEmpty': result.creches.length === 0}
+            )
+        })        
     }
 
     render() {
         return (
             <div id="tabela">
+               
                 <div className="container">
+                <Loading show={this.state.loading} color="yellow"/>
                     <Cabecalho textoNormal="Busque sua creche em" textoColorido="São Paulo" />
-
-                    {/* <div className="titulo">
-            <h3>Encontre a creche que procura em São Paulo através da busca
-                abaixo</h3>
-        </div> */}
                     <form>
                         <div className="tabela">
                             <div className="col">
@@ -67,7 +114,7 @@ export default class Tabela extends React.Component {
                             </div>
                         </div>
                         <div className="button">
-                            <Botao>Encontrar Creche</Botao>
+                            <button onClick={this.loadData.bind(this)}>Encontrar Creche</button>
                         </div>
                     </form>
 
@@ -85,7 +132,7 @@ export default class Tabela extends React.Component {
                              {
                                 this.state.data.map(item => (
                                     <tr>
-                                        <td>{item.escola}</td>
+                                        <td>{item.equipamento}</td>
                                         <td>{item.bairro}</td>
                                         <td>{item.endereco}</td>
                                         <td>{item.esfera}</td>

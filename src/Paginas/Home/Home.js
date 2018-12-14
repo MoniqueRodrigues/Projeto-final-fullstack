@@ -10,17 +10,18 @@ import './Home.scss'
 function Home() {
   return (
     <div className="home">
-      <Menu />
-      <div className= "home__imagem">
-        <h1 className="home__titulo">EducaCriança</h1>
-        <h2 className="home__subtitulo"> A melhor escolha para quem merece o melhor</h2>
-       </div>
-       <a href ="#oQueOferecemos"><Botao>Saiba Mais</Botao></a>
-          
-        
-        <OQueOferecemos />
-        {/* <Login/> */}
-         <Tabela />
+    <Menu />
+    <div className= "home__imagem">
+    <h1 className="home__titulo">EducaCriança</h1>
+    <h2 className="home__subtitulo"> A melhor escolha para quem merece o melhor</h2>
+    </div>
+    <a href ="#oQueOferecemos"><Botao>Saiba Mais</Botao></a>
+    
+    
+    <OQueOferecemos />
+    <Tabela />
+    
+    
     </div>
   )
 }

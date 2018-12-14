@@ -4,21 +4,23 @@
     display: block;
     width: 100%;
     padding: 0.8rem;
-    margin: 0 0 1rem;
+    
     border-radius: 5px;
     border: solid 1px transparent;
     padding: 10px 150px;
+    background-color: white;
  
-
-        
+       
   }
   
   .campo:focus {
     outline: none;
     border-color: #29b6d6;;
     box-shadow: 0 0 10px #29b6d6;
+ 
   }
   
   .campo__erro {
     color: #29b6d6;
   }
+  
