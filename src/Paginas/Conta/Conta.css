@@ -28,12 +28,12 @@
 
 .conta .Botao {
   position: absolute;
-  top: 500px;
+  top: 440px;
   right: 600px;
-  text-decoration: none;
 }
 
-.conta link {
-  color: #fff700;
+.conta .Botao a, .conta .Botao a:hover, .conta .Botao a:visited, .conta .Botao a:active {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=Conta.css.map */

@@ -4,7 +4,6 @@ import OQueOferecemos from '../../Paginas/OQueOferecemos/OQueOferecemos'
 import './Tabela.scss'
 import Cabecalho from '../Cabecalho/Cabecalho'
 import Botao from '../Botao/Botao'
-import Loading from 'react-loading-bar'
 
 
 const proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -14,7 +13,7 @@ export default class Tabela extends React.Component {
     constructor(props) {
         super(props)
         this.state ={bairro: '', escola: '', esfera:'', tipo:'', loading: true, data: [], dataEmpty : false}
-        
+
         this.handleChangeEsfera = this.handleChangeEsfera.bind(this)
         this.handleChangeTipo = this.handleChangeTipo.bind(this)
         this.handleChangeBairro = this.handleChangeBairro.bind(this)
@@ -29,7 +28,7 @@ export default class Tabela extends React.Component {
 
     componentDidMount = data => {
         this.setState({'loading': true, 'data': []})
-        fetch(proxy + 'https://creches-api.herokuapp.com/api/v1/creches/creche', Headers= ["Origin=null"])
+        fetch(proxy + 'https://creches-api.herokuapp.com/api/v1/creches/page/0', Headers= ["Origin=null"])
         .then(res => res.json())
         .then((result) => {
             this.setState({'loading' : false, 'data': result.creches})
@@ -73,43 +72,45 @@ export default class Tabela extends React.Component {
 
     render() {
         return (
+            <div>
+            <Menu />
             <div id="tabela">
                
                 <div className="container">
-                <Loading show={this.state.loading} color="yellow"/>
+                
                     <Cabecalho textoNormal="Busque sua creche em" textoColorido="São Paulo" />
                     <form>
                         <div className="tabela">
                             <div className="col">
                                 <label className="label" for="txtBairro">Bairro</label>
-                                <input id="txtBairro" type="text" className="form-control" />
+                                <input id="txtBairro" type="text"  value={this.state.bairro} onChange={this.handleChangeBairro} className="form-control" />
                             </div>
                             <div className="col">
                                 <label className="label" for="txtEscola">Escola</label>
-                                <input id="txtEscola" type="text" className="form-control" />
+                                <input id="txtEscola" type="text"  value={this.state.escola} onChange={this.handleChangeEscola} className="form-control" />
                             </div>
                             <div className="col">
                                 <label className="label" for="txtEsfera">Esfera</label>
-                                <select name="" id="selectEsfera" className="form-control">
+                                <select name="" id="selectEsfera" value={this.state.esfera}  onChange={this.handleChangeEsfera} className="form-control">
                                     <option value="">TODAS</option>
-                                    <option value="">ESTADUAL-SE</option>
-                                    <option value="">MUNICIPAL</option>
-                                    <option value="">PARTICULAR</option>
-                                    <option value="">ESTADUAL-OUT</option>
+                                    <option value="ESTADUAL-SE">ESTADUAL-SE</option>
+                                    <option value="MUNICIPAL">MUNICIPAL</option>
+                                    <option value="PARTICULAR">PARTICULAR</option>
+                                    <option value="ESTADUAL-OUT">ESTADUAL-OUT</option>
                                 </select>
                             </div>
                             <div className="col">
                                 <label className="label" for="txtTipo">Tipo</label>
-                                <select name="" id="selectEsfera" className="form-control">
+                                <select name="" id="selectTipo" value={this.state.tipo} onChange={this.handleChangeTipo} className="form-control">
                                     <option value="">TODAS</option>
-                                    <option value="">EEI</option>
-                                    <option value="">EMEI</option>
-                                    <option value="">CEI DIRET</option>
-                                    <option value="">CEMEI</option>
-                                    <option value="">CCI/CIPS</option>
-                                    <option value="">CEI INDIR</option>
-                                    <option value="">CR.P.CONV</option>
-                                    <option value="">CCI</option>
+                                    <option value="EEI">EEI</option>
+                                    <option value="EMEI">EMEI</option>
+                                    <option value="CEI DIRET">CEI DIRET</option>
+                                    <option value="CEMEI">CEMEI</option>
+                                    <option value="CCI/CIPS">CCI/CIPS</option>
+                                    <option value="CEI INDIR">CEI INDIR</option>
+                                    <option value="CR.P.CONV">CR.P.CONV</option>
+                                    <option value="CCI">CCI</option>
                                 </select>
                             </div>
                         </div>
@@ -143,6 +144,8 @@ export default class Tabela extends React.Component {
                         </tbody>
                     </table>
                 </div>
-            </div>)
+            </div>
+        </div>
+        )
     }
 }

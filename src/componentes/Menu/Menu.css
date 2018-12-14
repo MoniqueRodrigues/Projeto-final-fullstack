@@ -51,6 +51,7 @@
   transition: all .2s linear;
   color: white;
   font-weight: bold;
+  width: 161px;
 }
 
 .menu .barra nav a .link:hover {

@@ -16,7 +16,8 @@ import './index.scss'
 function App(){
     return(
         <Switch>
-            <Route path = "/home" component={Home}/>
+            <Route path = "/home" exact component={Home}/>
+            <Route path = "/" exact component={Home}/>
             <Route path ="/oQueOferecemos" component={OQueOferecemos}/>
             <Route path= "/tabela" component ={Tabela}/>
             <Route path="/login" component={Login} />

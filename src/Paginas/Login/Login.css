@@ -1,6 +1,7 @@
 .login {
   background-color: #8b8b8c;
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,15 +28,16 @@
 
 .login .Botao {
   position: absolute;
-  top: 380px;
+  top: 350px;
   right: 600px;
 }
 
-.login link {
-  color: #fff700;
+.login .Botao a, .login .Botao a:hover, .login .Botao a:visited, .login .Botao a:active {
+  text-decoration: none;
+  color: white;
 }
 
-.login Link {
-  margin-top: 100px;
+.login .link {
+  margin-top: 10%;
 }
 /*# sourceMappingURL=Login.css.map */

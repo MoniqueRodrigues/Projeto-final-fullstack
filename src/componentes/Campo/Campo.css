@@ -5,10 +5,10 @@
   display: block;
   width: 100%;
   padding: 0.8rem;
-  margin: 0 0 1rem;
   border-radius: 5px;
   border: solid 1px transparent;
   padding: 10px 150px;
+  background-color: white;
 }
 
 .campo:focus {

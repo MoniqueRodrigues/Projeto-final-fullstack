@@ -7,16 +7,18 @@ import Cabecalho from '../../componentes/Cabecalho/Cabecalho'
 
 function OQueOferecemos(){
     return(
-    
-    <div id="oQueOferecemos">    
-      
-        <div className="oQueOferecemosWrapper">
-                <Cabecalho textoNormal="O que" textoColorido="Oferecemos"/>
-                {Card(null)}
-              
+    <div>
+        <Menu />
+        <div id="oQueOferecemos">    
+        
+            <div className="oQueOferecemosWrapper">
+                    <Cabecalho textoNormal="O que" textoColorido="Oferecemos"/>
+                    
+                    <Card />
+                
+            </div>
         </div>
     </div>
-    
     )
 }
 export default OQueOferecemos

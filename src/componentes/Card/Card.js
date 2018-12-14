@@ -14,7 +14,7 @@ function Card(props){
 
                         <div className="atras">
                                 <p> Pesquisa de creches públicas e particulares exclusivamente em São Paulo</p>
-                                <Botao><a href="#tabela">Busque sua creche</a></Botao>
+                                <Botao><a href="tabela">Busque sua creche</a></Botao>
                         </div>
                     </div>
                 </div>

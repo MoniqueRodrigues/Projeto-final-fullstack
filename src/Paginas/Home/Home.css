@@ -17,15 +17,14 @@
           align-items: center;
 }
 
+.home .home__imagem .Botao {
+  margin-bottom: 50px;
+}
+
 .home .home__imagem::after {
-  position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eeee9d20), color-stop(60%), to(transparent));
-  background: linear-gradient(180deg, #eeee9d20 0, 60%, transparent 100%);
 }
 
 .home .home__titulo {
@@ -46,9 +45,5 @@
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 20px;
   margin-top: 25px;
-}
-
-.home .Botao {
-  margin-bottom: 50px;
 }
 /*# sourceMappingURL=Home.css.map */

@@ -51,7 +51,7 @@ class Conta extends Component {
             <Campo ref={this.senhaRef} id="senha" type="password" name="senha" placeholder="Senha" required minLength={6} onChange={this.habilitaOuDesabilita} />
             
             {/* <Botao desabilitado={this.state.desabilitado}>Enviar</Botao> */}
-            <Botao desabilitado={this.state.desabilitado}><a href="/Login">Enviar</a></Botao>
+            <Botao desabilitado={this.state.desabilitado}><a href="tabela">Criar conta</a></Botao>
       
         </main>
     </div>    

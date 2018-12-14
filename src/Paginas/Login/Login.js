@@ -67,7 +67,7 @@ export default class Login extends Component {
         <Campo ref={this.senhaRef} id="senha" type="password" name="senha" placeholder="Senha" required minLength={6} onChange={this.habilitaOuDesabilitaBotao} />
         
         <Formulario.Botao desabilitado={this.state.desabilitado}>
-        <a href="tabela">Enviar</a>
+        <a href="tabela">Login</a>
         </Formulario.Botao>
         </Formulario>
         
