@@ -1,8 +1,9 @@
 import React from 'react'
-import Menu from '../../componentes/Menu/Menu.js'
+import Menu from './../../componentes/Menu/Menu'
+import Botao from './../../componentes/Botao/Botao'
+import Cabecalho from './../../componentes/Cabecalho/Cabecalho'
 import './Tabela.scss'
-import Cabecalho from '../Cabecalho/Cabecalho'
-import Botao from '../Botao/Botao'
+
 
 
 const proxy = 'https://cors-anywhere.herokuapp.com/';
