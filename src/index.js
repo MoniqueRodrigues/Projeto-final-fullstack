@@ -13,7 +13,7 @@ import './index.scss'
 
 
 
-function App(){
+export function App(){
     return(
         <Switch>
             <Route path = "/home" exact component={Home}/>
