@@ -7,7 +7,7 @@ import Botao from '../Botao/Botao'
 
 const proxy = 'https://cors-anywhere.herokuapp.com/';
 
-export default class Tabela extends React.Component {
+class Tabela extends React.Component {
 
     constructor(props) {
         super(props)
@@ -149,3 +149,5 @@ export default class Tabela extends React.Component {
         )
     }
 }
+
+export default Tabela
