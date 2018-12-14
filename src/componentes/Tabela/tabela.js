@@ -47,7 +47,7 @@ export default class Tabela extends React.Component {
     }
 
     loadData = event => {
-        
+        event.preventDefault()
         this.setState({loading : true})
         let urlBase = proxy + 'https://creches-api.herokuapp.com/api/v1/creches/creche'
         
@@ -74,12 +74,13 @@ export default class Tabela extends React.Component {
         return (
             <div>
             <Menu />
+            
             <div id="tabela">
-               
                 <div className="container">
                 
                     <Cabecalho textoNormal="Busque sua creche em" textoColorido="São Paulo" />
                     <form>
+                        
                         <div className="tabela">
                             <div className="col">
                                 <label className="label" for="txtBairro">Bairro</label>
@@ -114,9 +115,6 @@ export default class Tabela extends React.Component {
                                 </select>
                             </div>
                         </div>
-                        <div className="button">
-                            <button onClick={this.loadData.bind(this)}>Encontrar Creche</button>
-                        </div>
                     </form>
 
                     <table>
@@ -144,6 +142,9 @@ export default class Tabela extends React.Component {
                         </tbody>
                     </table>
                 </div>
+            </div>
+            <div className="button">
+                <Botao onClick={this.loadData.bind(this)}>Encontrar Creche</Botao>
             </div>
         </div>
         )

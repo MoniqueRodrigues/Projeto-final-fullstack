@@ -6,7 +6,7 @@ function Botao(props) {
   
   return (
     
-    <button className="botao">
+    <button className="botao" onClick={props.onClick}>
       {props.children}
     </button>
     
