@@ -13,9 +13,7 @@ function OQueOferecemos(){
         
             <div className="oQueOferecemosWrapper">
                     <Cabecalho textoNormal="O que" textoColorido="Oferecemos"/>
-                    
                     <Card />
-                
             </div>
         </div>
     </div>

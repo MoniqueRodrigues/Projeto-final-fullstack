@@ -1,6 +1,5 @@
 import React from 'react'
 import Menu from '../../componentes/Menu/Menu.js'
-import OQueOferecemos from '../../Paginas/OQueOferecemos/OQueOferecemos'
 import './Tabela.scss'
 import Cabecalho from '../Cabecalho/Cabecalho'
 import Botao from '../Botao/Botao'

@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-//import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
-//import { logaUsuario } from '../../componentes/logaUsuario'
 import Formulario from '../../componentes/Formulario/Formulario'
 import Link from '../../componentes/Link/Link'
 import Botao from '../../componentes/Botao/Botao'
